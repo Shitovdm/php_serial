@@ -49,11 +49,6 @@ class PHPSerialClass {
         }
     }
 
-    //
-    // OPEN/CLOSE DEVICE SECTION -- {START}
-
-    //
-
     /**
      * Device set function : used to set the device name/address.
      * -> linux : use the device address, like /dev/ttyS0
@@ -132,7 +127,6 @@ class PHPSerialClass {
         trigger_error("Unable to close the device", E_USER_ERROR);
         return false;
     }
-
 
     public function setBaudRate($rate) {
         if ($this->DeviceCondition !== DEVICE_DEFINED) {
@@ -244,7 +238,7 @@ class PHPSerialClass {
             trigger_error("Unable to set the length of a stop bit : the device is either not set or opened", E_USER_WARNING);
             return false;
         }
-        if ($length != 1 && $length != 2 && $length != 1.5 && ! ($length == 1.5 && $this->OS === "linux")) {
+        if ($length != 1 && $length != 2 && $length != 1.5 && !($length == 1.5 && $this->OS === "linux")) {
             trigger_error("Specified stop bit length is invalid", E_USER_WARNING);
             return false;
         }
