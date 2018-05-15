@@ -22,4 +22,5 @@ $serial->deviceOpen();
 <h3>Thanks:</h3>
 
 **https://github.com/Xowap/PHP-Serial**  
-**https://github.com/rubberneck/php-serial**
+**https://github.com/rubberneck/php-serial**  
+**https://github.com/meetanthony/crcphp**
