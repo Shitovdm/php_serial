@@ -18,3 +18,8 @@ $serial->confFlowControl("none");
   
 $serial->deviceOpen();  
 ```
+
+<h3>I express my gratitude:</h3>
+
+**https://github.com/Xowap/PHP-Serial**
+**https://github.com/rubberneck/php-serial**
